@@ -14,9 +14,9 @@ public class MovJugador : MonoBehaviour
     void Update()
     {
         Avanzar();
+        Retroceder();
         MovimientoJugador();
         CheckRotation();
-
     }
 
     void MovimientoJugador()
@@ -50,17 +50,18 @@ public class MovJugador : MonoBehaviour
     }
     void Retroceder()
     {
-        bool apreteHaciaAdelante = Input.GetKey("s");
+        bool apreteHaciaAtras = Input.GetKey("s");
 
-        if(apreteHaciaAdelante && speedback<1.0f)
+        if(apreteHaciaAtras && speedback<1.0f)
         {
             speedback+=Time.deltaTime * acceleration;
         }
-        if(!apreteHaciaAdelante && speedback > 0.0f)
+        if(!apreteHaciaAtras && speedback > 0.0f)
         {
             speedback-=Time.deltaTime * desacceleration;
         }
             anim.SetFloat("Speed Backward",speedback);
     }
+    
 }
 
