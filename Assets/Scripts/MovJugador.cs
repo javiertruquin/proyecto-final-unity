@@ -6,19 +6,13 @@ public class MovJugador : MonoBehaviour
 {
     public float speed = 1f;
     public float rotateSpeed = 100f;
-    public Animator anim;
-    float vel = 0.0f;
-    float speedback = 0.0f;
-    public float acceleration = 5f;
-    public float desacceleration = 3f;
+
     void Update()
     {
-        Avanzar();
-        Retroceder();
-        MovimientoJugador();
         CheckRotation();
+        MovimientoJugador();
     }
-
+        
     void MovimientoJugador()
     {
         float movX = Input.GetAxis("Horizontal");
@@ -29,39 +23,12 @@ public class MovJugador : MonoBehaviour
 
     void CheckRotation()
     {
-        var rotation = Input.GetAxisRaw("Mouse X") * rotateSpeed * Time.deltaTime * 500;
+        var rotation = Input.GetAxisRaw("Mouse X") * rotateSpeed * Time.deltaTime;
 
         transform.Rotate(0f, rotation, 0f);
     }
 
-    void Avanzar()
-    {
-        bool apreteHaciaAdelante = Input.GetKey("w");
-
-        if(apreteHaciaAdelante && vel<1.0f)
-        {
-            vel+=Time.deltaTime * acceleration;
-        }
-        if(!apreteHaciaAdelante && vel > 0.0f)
-        {
-            vel-=Time.deltaTime * desacceleration;
-        }
-            anim.SetFloat("Speed",vel);
-    }
-    void Retroceder()
-    {
-        bool apreteHaciaAtras = Input.GetKey("s");
-
-        if(apreteHaciaAtras && speedback<1.0f)
-        {
-            speedback+=Time.deltaTime * acceleration;
-        }
-        if(!apreteHaciaAtras && speedback > 0.0f)
-        {
-            speedback-=Time.deltaTime * desacceleration;
-        }
-            anim.SetFloat("Speed Backward",speedback);
-    }
+    
     
 }
 
