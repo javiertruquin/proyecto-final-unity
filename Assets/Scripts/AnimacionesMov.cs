@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimacionesMov : MonoBehaviour
@@ -35,7 +33,6 @@ public class AnimacionesMov : MonoBehaviour
     // void Retroceder()
     // {
     //     bool apreteHaciaAtras = Input.GetKey("s");
-
     //     if(apreteHaciaAtras && speedback<1.0f)
     //     {   vel=0f;
     //         speedback+=Time.deltaTime * acceleration;
@@ -47,6 +44,5 @@ public class AnimacionesMov : MonoBehaviour
     //     }
     //         anim.SetFloat("Speed Backward",speedback);
     //         anim.SetFloat("Speed",vel);
-
     // }
 }
