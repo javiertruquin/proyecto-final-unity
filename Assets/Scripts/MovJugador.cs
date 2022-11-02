@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class MovJugador : MonoBehaviour
 {
-    public float speed = 1f;
-    public float rotateSpeed = 100f;
+    public float speed = 10f;
+    public float rotateSpeed = 300f;
+    public Animator anim;
 
     void Update()
     {
@@ -17,6 +18,9 @@ public class MovJugador : MonoBehaviour
         float movY = Input.GetAxis("Vertical");
         Vector3 inputJugador=new Vector3(movX,0,movY);
         transform.Translate(inputJugador * speed * Time.deltaTime);
+        anim.SetFloat("VelX",movX);
+        anim.SetFloat("VelY",movY);
+
     }
 
     void CheckRotation()
@@ -25,7 +29,6 @@ public class MovJugador : MonoBehaviour
 
         transform.Rotate(0f, rotation, 0f);
     }
-
     
     
 }
