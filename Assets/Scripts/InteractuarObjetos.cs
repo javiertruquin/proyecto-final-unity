@@ -7,6 +7,8 @@ public class InteractuarObjetos : MonoBehaviour
     public int espacioActual = 0;
     public int espacioMaximo = 3;
     public bool variableDebug=false;
+    public Animator anim;
+    public bool estaAgarrando=false;
 
     void Start()
     {
@@ -26,6 +28,8 @@ public class InteractuarObjetos : MonoBehaviour
                 if(espacioMaximo-espacioActual>=1)
                 {
                     timerRecoger+=Time.deltaTime;
+                    estaAgarrando=true;
+                    anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
                         Debug.Log("Recogiendo Objeto");
@@ -49,6 +53,8 @@ public class InteractuarObjetos : MonoBehaviour
                 if(espacioMaximo-espacioActual>=2)
                 {
                     timerRecoger+=Time.deltaTime;
+                    estaAgarrando=true;
+                    anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
                         Debug.Log("Recogiendo Objeto");
@@ -73,6 +79,8 @@ public class InteractuarObjetos : MonoBehaviour
                 if(espacioMaximo-espacioActual>=3)
                 {
                     timerRecoger+=Time.deltaTime;
+                    estaAgarrando=true;
+                    anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
                         Debug.Log("Recogiendo Objeto");
@@ -114,6 +122,9 @@ public class InteractuarObjetos : MonoBehaviour
         {
             timerRecoger=0f;
             variableDebug=false;
+            estaAgarrando=false;
+            anim.SetBool("estaAgarrando",estaAgarrando);
+
 
         }
     }
