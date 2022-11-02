@@ -1526,7 +1526,7 @@ Animator:
   m_GameObject: {fileID: 1830359147}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: de65804eb4f4b214b94e064ef2e1ad1e, type: 2}
+  m_Controller: {fileID: 9100000, guid: fb37de4506a168f4992076e47116480e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1550,6 +1550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotateSpeed: 300
+  anim: {fileID: 1830359148}
 --- !u!114 &1830359150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1557,14 +1558,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830359147}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd73467a29e6b44b90c5c6fdb880226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1830359148}
-  acceleration: 2
-  desacceleration: 2
+  anim: {fileID: 0}
+  acceleration: 5
+  desacceleration: 3
 --- !u!4 &1830359151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba2e5b3833c0dcd4185a1a76a834a01e, type: 3}
