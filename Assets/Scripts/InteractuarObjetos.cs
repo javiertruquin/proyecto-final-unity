@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class InteractuarObjetos : MonoBehaviour
 {
-
+    public GameObject YouVeGotSomething;
+    public GameObject SonidoFold;
     public float timerRecoger= 0f;
     public int espacioActual = 0;
     public int espacioMaximo = 3;
@@ -37,6 +38,7 @@ public class InteractuarObjetos : MonoBehaviour
                     }
                     if(timerRecoger>=1f)
                     {
+                        Instantiate(SonidoFold);
                         Debug.Log("Objeto Chico Recogido");
                         timerRecoger=0f;
                         col.transform.gameObject.SetActive(false);
@@ -62,6 +64,7 @@ public class InteractuarObjetos : MonoBehaviour
                     }
                     if(timerRecoger>=2f)
                     {
+                        Instantiate(SonidoFold);
                         Debug.Log("Objeto Mediano Recogido");
                         timerRecoger=0f;
                         col.transform.gameObject.SetActive(false);
@@ -88,6 +91,7 @@ public class InteractuarObjetos : MonoBehaviour
                     }
                     if(timerRecoger>=3f)
                     {
+                        Instantiate(SonidoFold);
                         Debug.Log("Objeto Grande Recogido");
                         timerRecoger=0f;
                         col.transform.gameObject.SetActive(false);
@@ -107,6 +111,7 @@ public class InteractuarObjetos : MonoBehaviour
             {
                 if(espacioActual>0)
                 {
+                    Instantiate(YouVeGotSomething);
                     Debug.Log("Felicidades!!! Recuperaste Algo!!!");
                     espacioActual=0;
                 }else

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TiempoPartida : MonoBehaviour
 {
+    public GameObject Timer;
     public float tiempoPartida=50f;
     public float tiempoRestante=0f;
     public bool aSalvo=true;
@@ -31,6 +32,9 @@ public class TiempoPartida : MonoBehaviour
         {
             tiempoRestante-=Time.deltaTime;
         }
+        if (tiempoRestante <= 10)
+        { Timer.SetActive(true);
+               }
     }
 
     void OnTriggerEnter(Collider col)
