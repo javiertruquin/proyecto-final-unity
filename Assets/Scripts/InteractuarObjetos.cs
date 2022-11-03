@@ -7,6 +7,8 @@ public class InteractuarObjetos : MonoBehaviour
     public int espacioActual = 0;
     public int espacioMaximo = 3;
     public bool variableDebug=false;
+    public Animator anim;
+    public bool estaAgarrando=false;
 
     void Start()
     {
@@ -26,12 +28,14 @@ public class InteractuarObjetos : MonoBehaviour
                 if(espacioMaximo-espacioActual>=1)
                 {
                     timerRecoger+=Time.deltaTime;
+                    // estaAgarrando=true;
+                    // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
                         Debug.Log("Recogiendo Objeto");
                         variableDebug=true;
                     }
-                    if(timerRecoger>=1.5f)
+                    if(timerRecoger>=1f)
                     {
                         Debug.Log("Objeto Chico Recogido");
                         timerRecoger=0f;
@@ -49,12 +53,14 @@ public class InteractuarObjetos : MonoBehaviour
                 if(espacioMaximo-espacioActual>=2)
                 {
                     timerRecoger+=Time.deltaTime;
+                    // estaAgarrando=true;
+                    // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
                         Debug.Log("Recogiendo Objeto");
                         variableDebug=true;
                     }
-                    if(timerRecoger>=2.5f)
+                    if(timerRecoger>=2f)
                     {
                         Debug.Log("Objeto Mediano Recogido");
                         timerRecoger=0f;
@@ -73,12 +79,14 @@ public class InteractuarObjetos : MonoBehaviour
                 if(espacioMaximo-espacioActual>=3)
                 {
                     timerRecoger+=Time.deltaTime;
+                    // estaAgarrando=true;
+                    // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
                         Debug.Log("Recogiendo Objeto");
                         variableDebug=true;
                     }
-                    if(timerRecoger>=4f)
+                    if(timerRecoger>=3f)
                     {
                         Debug.Log("Objeto Grande Recogido");
                         timerRecoger=0f;
@@ -114,6 +122,9 @@ public class InteractuarObjetos : MonoBehaviour
         {
             timerRecoger=0f;
             variableDebug=false;
+            // estaAgarrando=false;
+            // anim.SetBool("estaAgarrando",estaAgarrando);
+
 
         }
     }

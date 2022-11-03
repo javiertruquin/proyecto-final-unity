@@ -26,7 +26,6 @@ public class MovJugador : MonoBehaviour
     void CheckRotation()
     {
         var rotation = Input.GetAxisRaw("Mouse X") * rotateSpeed * Time.deltaTime;
-
         transform.Rotate(0f, rotation, 0f);
     }
     
