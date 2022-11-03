@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5549558269561395230}
   - component: {fileID: 8839482236274661307}
   - component: {fileID: 6721852290259886961}
+  - component: {fileID: -2088468291670209459}
   m_Layer: 0
   m_Name: cabinetTelevisionDoors
   m_TagString: Untagged
@@ -169,6 +170,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-2088468291670209459
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064347789416825508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.000002, y: 3.1, z: 2.5000005}
+  m_Center: {x: 4.000001, y: 1.55, z: 1.2500002}
 --- !u!1 &8831788726889024003
 GameObject:
   m_ObjectHideFlags: 0

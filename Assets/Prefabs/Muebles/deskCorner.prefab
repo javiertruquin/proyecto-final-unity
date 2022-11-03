@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1389075614039301512}
   - component: {fileID: 2659700468652397101}
   - component: {fileID: 220060886636144359}
+  - component: {fileID: -3378953974533290202}
   m_Layer: 0
   m_Name: deskCorner
   m_TagString: Untagged
@@ -84,6 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-3378953974533290202
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733090110066919218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.744755, y: 3.844075, z: 9.744755}
+  m_Center: {x: 4.8723774, y: 1.9220375, z: 4.8723774}
 --- !u!1 &6375948665420315157
 GameObject:
   m_ObjectHideFlags: 0

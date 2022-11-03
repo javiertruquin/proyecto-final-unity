@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8483446358128230456}
   - component: {fileID: 4761600128293244829}
   - component: {fileID: 7345491248562535255}
+  - component: {fileID: 5336438355826035427}
   m_Layer: 0
   m_Name: plantSmall3
   m_TagString: ObjChico
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5336438355826035427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9146970476082420354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6974101, y: 2.9, z: 1.9600005}
+  m_Center: {x: 0, y: 1.45, z: 0}

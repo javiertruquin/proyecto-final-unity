@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6300536169136216036}
   - component: {fileID: 6980539663271483457}
   - component: {fileID: 5132745262598630539}
+  - component: {fileID: 5350847451178963024}
   m_Layer: 0
   m_Name: computerKeyboard
   m_TagString: ObjChico
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5350847451178963024
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646135400122092894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8220007, y: 0.27556, z: 1.1819203}
+  m_Center: {x: 1.4110004, y: 0.13778, z: 0.59096014}

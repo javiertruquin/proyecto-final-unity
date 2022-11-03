@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 7297879315754033403}
   - component: {fileID: 5974197559688671070}
   - component: {fileID: 8434233088773413780}
+  - component: {fileID: 3409541799617281628}
   m_Layer: 0
   m_Name: bookcaseClosedDoors
   m_TagString: Untagged
@@ -253,3 +254,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3409541799617281628
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7929878241211382337}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.000001, y: 8.5, z: 2.5000005}
+  m_Center: {x: 2.0000005, y: 4.25, z: 1.2500002}

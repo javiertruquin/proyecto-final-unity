@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 151645093570166984}
   - component: {fileID: 3870030232398417773}
   - component: {fileID: 1320096423939783591}
+  - component: {fileID: 1584907572520961957}
   m_Layer: 0
   m_Name: lampRoundTable
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1584907572520961957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671336254068890226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5203941, y: 3.1425, z: 1.7556}
+  m_Center: {x: 0.5999999, y: 1.57125, z: 0.6}
