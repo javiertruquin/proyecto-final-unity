@@ -8,6 +8,7 @@ TagManager:
   - ObjMediano
   - ObjGrande
   - Depositar
+  - Luz
   layers:
   - Default
   - TransparentFX
