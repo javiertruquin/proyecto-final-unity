@@ -23,9 +23,11 @@ public class TiempoPartida : MonoBehaviour
             tiempoRestante=0f;
             if(aSalvo)
             {
+                Destroy(Timer);
                 Debug.Log("Estas A Salvo");
             }else
             {
+                Destroy(Timer);
                 Debug.Log("Estas Muerto");
             }
         }else

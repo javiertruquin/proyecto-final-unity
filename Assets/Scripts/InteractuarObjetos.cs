@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class InteractuarObjetos : MonoBehaviour
 {
+    public GameObject BigGuy;
     public GameObject YouVeGotSomething;
     public GameObject SonidoFold;
     public float timerRecoger= 0f;
@@ -91,6 +92,7 @@ public class InteractuarObjetos : MonoBehaviour
                     }
                     if(timerRecoger>=3f)
                     {
+                        Instantiate(BigGuy);
                         Instantiate(SonidoFold);
                         Debug.Log("Objeto Grande Recogido");
                         timerRecoger=0f;
