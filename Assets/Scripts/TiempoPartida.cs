@@ -22,23 +22,28 @@ public class TiempoPartida : MonoBehaviour
             Debug.Log("Se acabo el tiempo");
             tiempoRestante=0f;
             if(aSalvo)
-            {
-                Timer.SetActive(false);
+            {         
+main
                 Debug.Log("Estas A Salvo");
+                Timer.SetActive(false);
             }else
             {
-                Timer.SetActive(false);
+
+
+
+main
                 Debug.Log("Estas Muerto");
+                Timer.SetActive(false);
             }
         }else
         {
+            if (tiempoRestante <= 10)
+        {
+            Timer.SetActive(true);
+        }
             tiempoRestante-=Time.deltaTime;
         }
-        if (tiempoRestante <= 10&&tiempoRestante>=0)
-        { Timer.SetActive(true);
-               }
-        if (tiempoRestante<0)
-        { Timer.SetActive(false); }
+main
     }
 
     void OnTriggerEnter(Collider col)

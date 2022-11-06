@@ -5,6 +5,7 @@ public class MovJugador : MonoBehaviour
     public float speed = 10f;
     public float rotateSpeed = 300f;
     public Animator anim;
+    // public Rigidbody rb;
 
     void Update()
     {
@@ -15,9 +16,15 @@ public class MovJugador : MonoBehaviour
     void MovimientoJugador()
     {
         float movX = Input.GetAxis("Horizontal");
-        float movY = Input.GetAxis("Vertical");
+        float movY = Input.GetAxis("Vertical") ;
         Vector3 inputJugador=new Vector3(movX,0,movY);
-        transform.Translate(inputJugador * speed * Time.deltaTime);
+        // Vector3 inputJugador2=new Vector3(0,0,movY);
+        // rb.AddForce(inputJugador,ForceMode.Impulse);
+        // rb.AddForce(inputJugador2,ForceMode.Impulse);
+        
+
+        transform.Translate(inputJugador* speed * Time.deltaTime);
+
         anim.SetFloat("VelX",movX);
         anim.SetFloat("VelY",movY);
 
