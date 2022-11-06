@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.006039886, g: 0.005670311, b: 0.0036216266, a: 1}
+  m_IndirectSpecularColor: {r: 0.0060398756, g: 0.0056703053, b: 0.0036216392, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7386,11 +7386,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830359147}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8e64bad529ecbb48855ed9e3910f3a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Searching: {fileID: 0}
   BigGuy: {fileID: 731228626406351845, guid: 00af7018d12a31c4992c7ccfa1c0ca7e, type: 3}
   YouVeGotSomething: {fileID: 4433776316237954867, guid: e8a76092bc170714e82fa40b8b0bee20, type: 3}
   SonidoFold: {fileID: 7929406083970735846, guid: 8879efbcb18880b44b0613b64e861bcc, type: 3}
@@ -7398,7 +7399,7 @@ MonoBehaviour:
   espacioActual: 0
   espacioMaximo: 4
   variableDebug: 0
-  anim: {fileID: 0}
+  anim: {fileID: 1830359148}
   estaAgarrando: 0
 --- !u!65 &1830359155
 BoxCollider:
@@ -7472,6 +7473,28 @@ MonoBehaviour:
   speed: 7
   rotateSpeed: 300
   anim: {fileID: 1830359148}
+--- !u!114 &1830359160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830359147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d7d55e4f90bee4baad7ba9ea6ed3f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Searching: {fileID: 0}
+  BigGuy: {fileID: 0}
+  YouVeGotSomething: {fileID: 0}
+  SonidoFold: {fileID: 0}
+  timerRecoger: 0
+  espacioActual: 0
+  espacioMaximo: 4
+  variableDebug: 0
+  anim: {fileID: 1830359148}
+  estaAgarrando: 0
 --- !u!1 &1890634197
 GameObject:
   m_ObjectHideFlags: 0

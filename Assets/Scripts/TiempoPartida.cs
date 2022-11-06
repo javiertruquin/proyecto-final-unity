@@ -22,33 +22,26 @@ public class TiempoPartida : MonoBehaviour
             Debug.Log("Se acabo el tiempo");
             tiempoRestante=0f;
             if(aSalvo)
-            {         
-main
+            {
                 Debug.Log("Estas A Salvo");
                 Timer.SetActive(false);
             }else
             {
-
-
-
-main
                 Debug.Log("Estas Muerto");
                 Timer.SetActive(false);
             }
         }else
         {
             if (tiempoRestante <= 10)
-        {
-            Timer.SetActive(true);
-        }
+            {
+                Timer.SetActive(true);
+            }
             tiempoRestante-=Time.deltaTime;
         }
-main
     }
 
     void OnTriggerEnter(Collider col)
     {
-
         if(col.transform.gameObject.tag == "Depositar")
         {
             aSalvo=true;
