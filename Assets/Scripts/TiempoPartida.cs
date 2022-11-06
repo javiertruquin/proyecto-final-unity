@@ -22,11 +22,16 @@ public class TiempoPartida : MonoBehaviour
             Debug.Log("Se acabo el tiempo");
             tiempoRestante=0f;
             if(aSalvo)
-            {
+            {         
+main
                 Debug.Log("Estas A Salvo");
                 Timer.SetActive(false);
             }else
             {
+
+
+
+main
                 Debug.Log("Estas Muerto");
                 Timer.SetActive(false);
             }
@@ -38,7 +43,7 @@ public class TiempoPartida : MonoBehaviour
         }
             tiempoRestante-=Time.deltaTime;
         }
-
+main
     }
 
     void OnTriggerEnter(Collider col)

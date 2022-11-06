@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class InteractuarObjetos : MonoBehaviour
 {
+    public GameObject Searching;
     public GameObject BigGuy;
     public GameObject YouVeGotSomething;
     public GameObject SonidoFold;
@@ -34,12 +35,14 @@ public class InteractuarObjetos : MonoBehaviour
                     // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
+                        Searching.SetActive(true);
                         Debug.Log("Recogiendo Objeto");
                         variableDebug=true;
                     }
                     if(timerRecoger>=1f)
                     {
-                        Instantiate(SonidoFold);
+                        Searching.SetActive(false);
+                        SonidoFold.SetActive(true);
                         Debug.Log("Objeto Chico Recogido");
                         timerRecoger=0f;
                         col.transform.gameObject.SetActive(false);
@@ -48,6 +51,8 @@ public class InteractuarObjetos : MonoBehaviour
                     }
                 }else
                 {
+                    Searching.SetActive(false);
+                    SonidoFold.SetActive(false);
                     Debug.Log("No puedo Recoger este Objeto");
                 }
             }
@@ -60,12 +65,14 @@ public class InteractuarObjetos : MonoBehaviour
                     // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
+                        Searching.SetActive(true);
                         Debug.Log("Recogiendo Objeto");
                         variableDebug=true;
                     }
                     if(timerRecoger>=2f)
                     {
-                        Instantiate(SonidoFold);
+                        Searching.SetActive(false);
+                        SonidoFold.SetActive(true);
                         Debug.Log("Objeto Mediano Recogido");
                         timerRecoger=0f;
                         col.transform.gameObject.SetActive(false);
@@ -75,6 +82,8 @@ public class InteractuarObjetos : MonoBehaviour
                     }
                 }else
                 {
+                    SonidoFold.SetActive(false);
+                    Searching.SetActive(false);
                     Debug.Log("No puedo Recoger este Objeto");
                 }
             }
@@ -87,13 +96,15 @@ public class InteractuarObjetos : MonoBehaviour
                     // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
+                        Searching.SetActive(true);
                         Debug.Log("Recogiendo Objeto");
                         variableDebug=true;
                     }
                     if(timerRecoger>=3f)
                     {
-                        Instantiate(BigGuy);
-                        Instantiate(SonidoFold);
+                        Searching.SetActive(false);
+                        BigGuy.SetActive(true);
+                        SonidoFold.SetActive(true);
                         Debug.Log("Objeto Grande Recogido");
                         timerRecoger=0f;
                         col.transform.gameObject.SetActive(false);
@@ -104,9 +115,13 @@ public class InteractuarObjetos : MonoBehaviour
                 {
                     if(variableDebug==false)
                     {
+                        Searching.SetActive(false);
+                        SonidoFold.SetActive(false);
+                        BigGuy.SetActive(false);
                         Debug.Log("No puedo Recoger este Objeto");
                         variableDebug=true;
                     }
+                    
                 }
             }
             if(col.transform.gameObject.tag == "Depositar")
@@ -119,7 +134,7 @@ public class InteractuarObjetos : MonoBehaviour
                 }else
                 {
                     if(variableDebug==false)
-                    {
+                    {   
                         Debug.Log("No Tienes Objetos");
                         variableDebug=true;
                     }
@@ -127,11 +142,12 @@ public class InteractuarObjetos : MonoBehaviour
             }
         }else
         {
-            timerRecoger=0f;
+            BigGuy.SetActive(false);
+            timerRecoger =0f;
             variableDebug=false;
             // estaAgarrando=false;
             // anim.SetBool("estaAgarrando",estaAgarrando);
-
+            SonidoFold.SetActive(false);
 
         }
     }
