@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class InteractuarObjetos : MonoBehaviour
 {
+    public GameObject Searching;
     public GameObject BigGuy;
     public GameObject YouVeGotSomething;
     public GameObject SonidoFold;
@@ -34,11 +35,13 @@ public class InteractuarObjetos : MonoBehaviour
                     // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
+                        Searching.SetActive(true);
                         Debug.Log("Recogiendo Objeto");
                         variableDebug=true;
                     }
                     if(timerRecoger>=1f)
                     {
+                        Searching.SetActive(false);
                         SonidoFold.SetActive(true);
                         Debug.Log("Objeto Chico Recogido");
                         timerRecoger=0f;
@@ -48,6 +51,7 @@ public class InteractuarObjetos : MonoBehaviour
                     }
                 }else
                 {
+                    Searching.SetActive(false);
                     SonidoFold.SetActive(false);
                     Debug.Log("No puedo Recoger este Objeto");
                 }
@@ -61,11 +65,13 @@ public class InteractuarObjetos : MonoBehaviour
                     // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
+                        Searching.SetActive(true);
                         Debug.Log("Recogiendo Objeto");
                         variableDebug=true;
                     }
                     if(timerRecoger>=2f)
                     {
+                        Searching.SetActive(false);
                         SonidoFold.SetActive(true);
                         Debug.Log("Objeto Mediano Recogido");
                         timerRecoger=0f;
@@ -76,6 +82,8 @@ public class InteractuarObjetos : MonoBehaviour
                     }
                 }else
                 {
+                    SonidoFold.SetActive(false);
+                    Searching.SetActive(false);
                     Debug.Log("No puedo Recoger este Objeto");
                 }
             }
@@ -88,12 +96,13 @@ public class InteractuarObjetos : MonoBehaviour
                     // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
-                        
+                        Searching.SetActive(true);
                         Debug.Log("Recogiendo Objeto");
                         variableDebug=true;
                     }
                     if(timerRecoger>=3f)
                     {
+                        Searching.SetActive(false);
                         BigGuy.SetActive(true);
                         SonidoFold.SetActive(true);
                         Debug.Log("Objeto Grande Recogido");
@@ -106,6 +115,7 @@ public class InteractuarObjetos : MonoBehaviour
                 {
                     if(variableDebug==false)
                     {
+                        Searching.SetActive(false);
                         SonidoFold.SetActive(false);
                         BigGuy.SetActive(false);
                         Debug.Log("No puedo Recoger este Objeto");
