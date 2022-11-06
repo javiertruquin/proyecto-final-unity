@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteractuarBis : MonoBehaviour
 {
+    [SerializeField] public Collider other;
     public GameObject Searching;
     public GameObject BigGuy;
     public GameObject YouVeGotSomething;
@@ -32,23 +33,40 @@ public class InteractuarBis : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter(Collider other)
-    {    switch (other.transform.gameObject.tag)
+    public void OnTriggerEnter(Collider other)
+    {
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            case "ObjChico":
-                ObjetoChico();
-                break;
-            case "ObjMediano":
-                ObjetoMediano();
-                break;
-            case "ObjGrande":
-                ObjetoGrande();
-                break;
-            default:
-                Debug.Log("We need CASH$$$");
-                break;
+            switch (other.transform.gameObject.tag)
+            {
+                case "ObjChico":
+                    ObjetoChico();
+                    break;
+                case "ObjMediano":
+                    ObjetoMediano();
+                    break;
+                case "ObjGrande":
+                    ObjetoGrande();
+                    break;
+                case "Depositar":
+                    Deposita();
+                    break;
+                default:
+                    Debug.Log("We need CASH $$$");
+                    break;
+            }
         }
-        
+        else
+        {
+            BigGuy.SetActive(false);
+            timerRecoger = 0f;
+            variableDebug = false;
+            // estaAgarrando=false;
+            // anim.SetBool("estaAgarrando",estaAgarrando);
+            SonidoFold.SetActive(false);
+
+        }
     }
     void ObjetoChico()
     {
@@ -100,7 +118,7 @@ public class InteractuarBis : MonoBehaviour
                 SonidoFold.SetActive(true);
                 Debug.Log("Objeto Mediano Recogido");
                 timerRecoger = 0f;
-                col.transform.gameObject.SetActive(false);
+                other.transform.gameObject.SetActive(false);
                 espacioActual += 2;
                 variableDebug = true;
 
@@ -133,7 +151,7 @@ public class InteractuarBis : MonoBehaviour
                 SonidoFold.SetActive(true);
                 Debug.Log("Objeto Grande Recogido");
                 timerRecoger = 0f;
-                col.transform.gameObject.SetActive(false);
+                other.transform.gameObject.SetActive(false);
                 espacioActual += 3;
                 variableDebug = true;
             }
@@ -151,4 +169,24 @@ public class InteractuarBis : MonoBehaviour
         }
 
         }
+    void Deposita()
+    {
+        if (other.transform.gameObject.tag == "Depositar")
+        {
+            if (espacioActual > 0)
+            {
+                Instantiate(YouVeGotSomething);
+                Debug.Log("Felicidades!!! Recuperaste Algo!!!");
+                espacioActual = 0;
+            }
+            else
+            {
+                if (variableDebug == false)
+                {
+                    Debug.Log("No Tienes Objetos");
+                    variableDebug = true;
+                }
+            }
+        }
+    }
 }
