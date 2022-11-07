@@ -1,3 +1,5 @@
+Escena Jugable: "Nivel1"
+
 Objetivo:
 Tratar de Robar todos los objetos posibles antes de que acabe el tiempo.
 Tienes solo 4 Slots, debes ir depositando los objetos recogidos en la entrada.
