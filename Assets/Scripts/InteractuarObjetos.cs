@@ -8,19 +8,10 @@ public class InteractuarObjetos : MonoBehaviour
     public GameObject SonidoFold;
     public float timerRecoger= 0f;
     public int espacioActual = 0;
-    public int espacioMaximo = 3;
+    public int espacioMaximo = 4;
     public bool variableDebug=false;
     public Animator anim;
     public bool estaAgarrando=false;
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-    }
 
     void OnTriggerStay(Collider col)
     {  
@@ -31,8 +22,6 @@ public class InteractuarObjetos : MonoBehaviour
                 if(espacioMaximo-espacioActual>=1)
                 {
                     timerRecoger+=Time.deltaTime;
-                    // estaAgarrando=true;
-                    // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
                         Searching.SetActive(true);
@@ -61,8 +50,6 @@ public class InteractuarObjetos : MonoBehaviour
                 if(espacioMaximo-espacioActual>=2)
                 {
                     timerRecoger+=Time.deltaTime;
-                    // estaAgarrando=true;
-                    // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
                         Searching.SetActive(true);
@@ -92,8 +79,6 @@ public class InteractuarObjetos : MonoBehaviour
                 if(espacioMaximo-espacioActual>=3)
                 {
                     timerRecoger+=Time.deltaTime;
-                    // estaAgarrando=true;
-                    // anim.SetBool("estaAgarrando",estaAgarrando);
                     if(variableDebug==false)
                     {
                         Searching.SetActive(true);
@@ -145,8 +130,6 @@ public class InteractuarObjetos : MonoBehaviour
             BigGuy.SetActive(false);
             timerRecoger =0f;
             variableDebug=false;
-            // estaAgarrando=false;
-            // anim.SetBool("estaAgarrando",estaAgarrando);
             SonidoFold.SetActive(false);
 
         }

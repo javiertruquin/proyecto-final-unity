@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestruirSonido : MonoBehaviour
 {
-    public float SpawnTimeSonido = 0.6f;
+    public float SpawnTimeSonido = 1f;
     // Start is called before the first frame update
     void Start()
     {
