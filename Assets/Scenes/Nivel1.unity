@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000018079034, g: 0.000000031714585, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.00001807899, g: 0.000000031714585, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -543,6 +543,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 151693178}
+  - {fileID: 263855136}
+  - {fileID: 584936686}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1333,7 +1335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 250869671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Medianos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1452,6 +1454,82 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &263855135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263855136}
+  - component: {fileID: 263855138}
+  - component: {fileID: 263855137}
+  m_Layer: 5
+  m_Name: Mira
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &263855136
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263855135}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 78911827}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &263855137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263855135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &263855138
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263855135}
+  m_CullTransparentMesh: 1
 --- !u!4 &265898327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6253265410506790147, guid: 087f212ec81fc564cb69c54333fe0f26, type: 3}
@@ -2924,6 +3002,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6253265410506790147, guid: 087f212ec81fc564cb69c54333fe0f26, type: 3}
   m_PrefabInstance: {fileID: 582592289}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &584936685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 584936686}
+  - component: {fileID: 584936688}
+  - component: {fileID: 584936687}
+  m_Layer: 5
+  m_Name: MiraInteractuar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &584936686
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584936685}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 78911827}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &584936687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584936685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.7924528, b: 0.25061157, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &584936688
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584936685}
+  m_CullTransparentMesh: 1
 --- !u!1001 &603378192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3059,6 +3213,10 @@ PrefabInstance:
     - target: {fileID: 968236785202613185, guid: ad76cbc911a516e4eb2fb3ec64df48cc, type: 3}
       propertyPath: m_Name
       value: books2
+      objectReference: {fileID: 0}
+    - target: {fileID: 968236785202613185, guid: ad76cbc911a516e4eb2fb3ec64df48cc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad76cbc911a516e4eb2fb3ec64df48cc, type: 3}
@@ -4831,7 +4989,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1034219682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chicos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7348,7 +7506,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1587420400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Objetos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8276,9 +8434,11 @@ MonoBehaviour:
   timerRecoger: 0
   espacioActual: 0
   espacioMaximo: 4
-  variableDebug: 0
   anim: {fileID: 1830359148}
   estaAgarrando: 0
+  rayDistance: 6
+  mira: {fileID: 263855135}
+  miraInteractuar: {fileID: 584936685}
 --- !u!65 &1830359155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8288,7 +8448,7 @@ BoxCollider:
   m_GameObject: {fileID: 1830359147}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 4.157195, y: 3.7600071, z: 3.5659409}
   m_Center: {x: -0.0020036697, y: 2.004086, z: 1.8780079}
@@ -8373,7 +8533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1890634198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grandes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9583,6 +9743,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairDesk
       objectReference: {fileID: 0}
+    - target: {fileID: 2083951300505663659, guid: c91b3c7ce9891d848b83c6249fdff551, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172341663357129415, guid: c91b3c7ce9891d848b83c6249fdff551, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91b3c7ce9891d848b83c6249fdff551, type: 3}
 --- !u!1001 &74887132693538102
@@ -9701,6 +9869,10 @@ PrefabInstance:
     - target: {fileID: 1091717492242980157, guid: d22b0d74f757a9f44a48d0453d5d2c50, type: 3}
       propertyPath: m_Name
       value: laptop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091717492242980157, guid: d22b0d74f757a9f44a48d0453d5d2c50, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d22b0d74f757a9f44a48d0453d5d2c50, type: 3}
@@ -10084,6 +10256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: books
       objectReference: {fileID: 0}
+    - target: {fileID: 968236785202613185, guid: ad76cbc911a516e4eb2fb3ec64df48cc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad76cbc911a516e4eb2fb3ec64df48cc, type: 3}
 --- !u!1001 &3265739078384891049
@@ -10265,6 +10441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: computerScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 8800422843977299128, guid: 8932fac568090524db8288f90e6bc26b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8932fac568090524db8288f90e6bc26b, type: 3}
 --- !u!4 &4207241902103704983 stripped
@@ -10419,6 +10599,10 @@ PrefabInstance:
     - target: {fileID: 8210351186657797833, guid: d7dcd666800551b4c8d771732c3ce748, type: 3}
       propertyPath: m_Name
       value: televisionModern
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210351186657797833, guid: d7dcd666800551b4c8d771732c3ce748, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8210351186657797833, guid: d7dcd666800551b4c8d771732c3ce748, type: 3}
       propertyPath: m_TagString
@@ -11202,6 +11386,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: computerKeyboard
       objectReference: {fileID: 0}
+    - target: {fileID: 6646135400122092894, guid: 1648c48b22846b1438126d9e1d14e053, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1648c48b22846b1438126d9e1d14e053, type: 3}
 --- !u!1001 &7877062256906012585
@@ -11214,6 +11402,10 @@ PrefabInstance:
     - target: {fileID: 187487851728325903, guid: 64c0f963d1b54df4a8514fe9a4e966ab, type: 3}
       propertyPath: m_Name
       value: computerMouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 187487851728325903, guid: 64c0f963d1b54df4a8514fe9a4e966ab, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 707566079291398069, guid: 64c0f963d1b54df4a8514fe9a4e966ab, type: 3}
       propertyPath: m_RootOrder
@@ -11592,6 +11784,10 @@ PrefabInstance:
     - target: {fileID: 4572515626648527194, guid: 4c2289dc303824f46a09bc56fe2fd3ab, type: 3}
       propertyPath: m_Name
       value: radio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572515626648527194, guid: 4c2289dc303824f46a09bc56fe2fd3ab, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c2289dc303824f46a09bc56fe2fd3ab, type: 3}
