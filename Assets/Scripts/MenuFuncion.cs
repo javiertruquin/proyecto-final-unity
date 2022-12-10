@@ -7,6 +7,11 @@ public class MenuFuncion : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void MenuPrincipal()
+    {
+        SceneManager.LoadScene(0);
+    }
     public void Salir()
     {
         Application.Quit();

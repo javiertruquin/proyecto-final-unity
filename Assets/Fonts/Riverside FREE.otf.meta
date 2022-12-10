@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7cdfd087d30e0354d8bed4600114bea6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Riverside FREE
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 253b4671fe4045643b26a2c3f489c2a3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
